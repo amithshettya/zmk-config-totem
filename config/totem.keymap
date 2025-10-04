@@ -95,8 +95,8 @@
 
             bindings = <
        &kp LG(LC(LS(LEFT)))  &kp LC(LS(LG(RIGHT)))  &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LC(PLUS))     &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(NUMBER_5))
-       &kp LEFT_SHIFT        &kp LEFT_CONTROL       &kp LEFT_ALT      &kp LEFT_COMMAND   &kp K_APPLICATION    &kp LEFT              &kp DOWN              &kp UP                &kp RIGHT             &kp TAB
-&mo 5  &kp LG(Z)             &kp LG(X)              &kp LG(C)         &kp LG(V)          &kp LC(LG(MINUS))    &kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_7))  &kp LG(LC(NUMBER_8))  &kp LG(LC(NUMBER_9))  &kp LG(LC(NUMBER_0))  &kp ENTER
+       &kp LEFT_SHIFT        &kp LEFT_CONTROL       &kp LEFT_ALT      &kp LEFT_COMMAND   &kp K_APPLICATION    &kp LEFT              &kp DOWN              &kp UP                &kp RIGHT             &kp ESCAPE
+&mo 5  &kp LG(Z)             &kp LG(X)              &kp LG(C)         &kp LG(V)          &kp LC(LG(MINUS))    &kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_7))  &kp LG(LC(NUMBER_8))  &kp LG(LC(NUMBER_9))  &kp LG(LC(NUMBER_0))  &kp LG(LS(V))
                                                     &trans            &trans             &trans               &trans                &trans                &trans
             >;
         };
