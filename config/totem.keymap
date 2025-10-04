@@ -46,17 +46,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E    &kp R  &kp T        &kp Y      &kp U           &kp I          &kp O    &kp P
-            &kp A  &kp S  &kp D    &kp F  &kp G        &kp H      &kp J           &kp K          &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp N      &kp M           &kp COMMA      &kp DOT  &kp FSLH  &kp APOSTROPHE
-                          &kp TAB  &mo 1  &kp ENTER    &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE
+           &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y  &kp U           &kp I          &kp O      &kp P
+           &kp A  &kp S  &kp D     &kp F  &kp G    &kp H  &kp J           &kp K          &kp L      &kp SPACE
+&kp TILDE  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N  &kp M           &kp BACKSPACE  &kp ENTER  &kp TAB    &kp GRAVE
+                         &kp LCMD  &mo 1  &mo 2    &mo 3  &kp LEFT_SHIFT  &mo 4
             >;
         };
 
-        num_layer {
+        num_sym_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NUM";
+            label = "NUM_SYM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -70,10 +70,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp EXCL      &kp AT        &kp HASH      &kp DLLR          &kp PRCNT         &kp CARET        &kp AMPS           &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5            &kp NUMBER_6     &kp N7             &kp N8        &kp N9                &kp N0
-&kp TILDE  &kp PIPE      &kp UNDER     &kp MINUS     &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS      &kp EQUAL             &kp BACKSLASH          &kp GRAVE
-                                       &trans        &trans            &trans            &mo 3            &mo 2              &mo 4
+        &kp QUESTION  &kp PERIOD    &kp COMMA     &kp LESS_THAN     &kp COLON         &kp SEMICOLON    &kp GREATER_THAN   &kp SQT   &kp DOUBLE_QUOTES  &kp SLASH
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5            &kp NUMBER_6     &kp N7             &kp N8    &kp N9             &kp N0
+&trans  &kp PIPE      &kp UNDER     &kp MINUS     &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS  &kp EQUAL          &kp BACKSLASH  &trans
+                                    &trans        &trans            &trans            &trans           &trans             &trans
             >;
         };
 
@@ -104,20 +104,20 @@
         base_hrm_layer {
             label = "BASE_HRM";
             bindings = <
-            &kp Q             &kp W        &kp E           &kp R               &kp T     &kp Y   &kp U               &kp I           &kp O        &kp P
-            &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F  &kp G     &kp H   &mt LEFT_COMMAND J  &mt LEFT_ALT K  &mt LCTRL L  &mt LSHIFT SEMI
-&kp ESCAPE  &kp Z             &kp X        &kp C           &kp V               &kp B     &kp N   &kp M               &kp COMMA       &kp DOT      &kp FSLH         &kp APOSTROPHE
-                                           &trans          &trans              &trans    &trans  &trans              &trans
+           &kp Q             &kp W        &kp E           &kp R       &kp T     &kp Y   &kp U               &kp I           &kp O        &kp P
+           &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LCMD F  &kp G     &kp H   &mt LEFT_COMMAND J  &mt LEFT_ALT K  &mt LCTRL L  &mt LEFT_SHIFT SPACE
+&kp TILDE  &kp Z             &kp X        &kp C           &kp V       &kp B     &kp N   &kp M               &kp BACKSPACE   &kp ENTER    &kp TAB               &kp GRAVE
+                                          &trans          &trans      &trans    &trans  &trans              &trans
             >;
         };
 
-        num_hrm_layer {
-            label = "NUM_HRM";
+        num_sym_hrm {
+            label = "NUM_SYM_HRM";
             bindings = <
-           &kp EXCL                 &kp AT              &kp HASH               &kp DLLR                   &kp PRCNT         &kp CARET        &kp AMPS             &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-           &mt LEFT_SHIFT NUMBER_1  &mt LCTRL NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LEFT_COMMAND NUMBER_4  &kp N5            &kp NUMBER_6     &mt LEFT_COMMAND N7  &mt LEFT_ALT N8  &mt LCTRL N9          &mt LSHIFT N0
-&kp TILDE  &kp PIPE                 &kp UNDER           &kp MINUS              &kp LEFT_BRACKET           &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp PLUS         &kp EQUAL             &kp BACKSLASH          &kp GRAVE
-                                                        &trans                 &trans                     &trans            &trans           &trans               &trans
+        &kp QUESTION             &kp PERIOD          &kp COMMA              &kp LESS_THAN      &kp COLON         &kp SEMICOLON    &kp GREATER_THAN   &kp SQT          &kp DOUBLE_QUOTES  &kp SLASH
+        &mt LEFT_SHIFT NUMBER_1  &mt LCTRL NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LCMD NUMBER_4  &kp N5            &kp NUMBER_6     &mt LCMD N7        &mt LEFT_ALT N8  &mt LCTRL N9       &mt LSHIFT N0
+&trans  &kp PIPE                 &kp UNDER           &kp MINUS              &kp LEFT_BRACKET   &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS         &kp EQUAL          &kp BACKSLASH  &trans
+                                                     &trans                 &trans             &trans            &trans           &trans             &trans
             >;
         };
 
