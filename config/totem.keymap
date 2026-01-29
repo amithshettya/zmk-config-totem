@@ -46,10 +46,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y  &kp U           &kp I          &kp O      &kp P
-           &kp A  &kp S  &kp D     &kp F  &kp G    &kp H  &kp J           &kp K          &kp L      &kp SPACE
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N  &kp M           &kp BACKSPACE  &kp ENTER  &kp TAB    &kp LCTRL
-                         &kp LCMD  &mo 1  &mo 2    &mo 3  &kp LEFT_SHIFT  &mo 4
+                   &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y  &kp U           &kp I          &kp O      &kp P
+                   &kp A  &kp S  &kp D     &kp F  &kp G    &kp H  &kp J           &kp K          &kp L      &kp SPACE
+&kp LS(BACKSPACE)  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N  &kp M           &kp BACKSPACE  &kp ENTER  &kp TAB    &kp LEFT_ALT
+                                 &kp LCMD  &mo 1  &mo 2    &mo 3  &kp LEFT_SHIFT  &kp LCTRL
             >;
         };
 
@@ -94,10 +94,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LG(LC(LS(LEFT)))  &kp LC(LS(LG(RIGHT)))  &kp LC(LG(LEFT))   &kp LG(LC(RIGHT))  &kp LG(LC(PLUS))     &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(NUMBER_5))
-        &kp LEFT_SHIFT        &kp LEFT_CONTROL       &kp LEFT_ALT       &kp LEFT_COMMAND   &kp K_APPLICATION    &kp LEFT              &kp DOWN              &kp UP                &kp RIGHT             &kp ESCAPE
-&trans  &kp TILDE             &kp GRAVE              &kp LA(BACKSPACE)  &kp LG(LS(V))      &kp LC(LG(MINUS))    &kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_7))  &kp LG(LC(NUMBER_8))  &kp LG(LC(NUMBER_9))  &kp LG(LC(NUMBER_0))  &trans
-                                                     &trans             &trans             &trans               &trans                &trans                &trans
+        &kp LG(LC(LS(LEFT)))  &kp LC(LS(LG(RIGHT)))  &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LC(PLUS))     &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(NUMBER_5))
+        &kp LEFT_SHIFT        &kp LEFT_CONTROL       &kp LEFT_ALT      &kp LEFT_COMMAND   &kp K_APPLICATION    &kp LEFT              &kp DOWN              &kp UP                &kp RIGHT             &trans
+&trans  &kp TILDE             &kp GRAVE              &kp ESCAPE        &kp LG(LS(V))      &kp LC(LG(MINUS))    &kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_7))  &kp LG(LC(NUMBER_8))  &kp LG(LC(NUMBER_9))  &kp LG(LC(NUMBER_0))  &trans
+                                                     &trans            &trans             &trans               &trans                &trans                &trans
             >;
         };
 
@@ -107,7 +107,7 @@
         &kp Q             &kp W        &kp E           &kp R       &kp T     &kp Y   &kp U               &kp I           &kp O        &kp P
         &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LCMD F  &kp G     &kp H   &mt LEFT_COMMAND J  &mt LEFT_ALT K  &mt LCTRL L  &mt LEFT_SHIFT SPACE
 &trans  &kp Z             &kp X        &kp C           &kp V       &kp B     &kp N   &kp M               &kp BACKSPACE   &kp ENTER    &kp TAB               &trans
-                                       &trans          &trans      &trans    &trans  &trans              &trans
+                                       &trans          &mo 4       &trans    &trans  &trans              &trans
             >;
         };
 
