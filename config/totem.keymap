@@ -71,7 +71,7 @@
 
             bindings = <
        &kp LS(LG(LC(LEFT)))  &kp LS(LC(LG(RIGHT)))  &kp LC(LG(LEFT))   &kp LC(LG(RIGHT))  &none         &kp RC(RG(NUMBER_1))  &kp RC(RG(NUMBER_2))  &kp RG(RC(NUMBER_3))  &kp RC(RG(NUMBER_4))  &kp RC(RG(N5))
-       &kp GRAVE             &kp TILDE              &kp UP_ARROW       &kp DOWN_ARROW     &kp ESCAPE    &kp BACKSPACE         &kp LEFT              &kp RIGHT             &kp NON_US_BACKSLASH  &kp PIPE
+       &kp GRAVE             &kp TILDE              &kp DOWN_ARROW     &kp UP_ARROW       &kp ESCAPE    &kp BACKSPACE         &kp LEFT              &kp RIGHT             &kp NON_US_BACKSLASH  &kp PIPE
 &mo 3  &none                 &none                  &kp LC(LG(MINUS))  &kp LC(LG(PLUS))   &none         &kp RC(RG(NUMBER_6))  &kp RC(RG(N7))        &kp RC(RG(N8))        &kp RC(RG(NUMBER_9))  &kp RC(RG(NUMBER_0))  &trans
                                                     &trans             &trans             &trans        &kp TAB               &trans                &trans
             >;
