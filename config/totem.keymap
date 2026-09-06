@@ -70,10 +70,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp LS(LG(LC(LEFT)))  &kp LS(LC(LG(RIGHT)))  &kp LC(LG(LEFT))   &kp LC(LG(RIGHT))  &kp SPACE        &kp RC(RG(NUMBER_1))  &kp RC(RG(NUMBER_2))  &kp RG(RC(NUMBER_3))  &kp RC(RG(NUMBER_4))  &kp RC(RG(N5))
-       &kp GRAVE             &kp TILDE              &kp DOWN_ARROW     &kp UP_ARROW       &kp BACKSPACE    &kp ESCAPE            &kp LEFT              &kp RIGHT             &kp NON_US_BACKSLASH  &kp PIPE
-&mo 3  &none                 &none                  &kp LC(LG(MINUS))  &kp LC(LG(PLUS))   &none            &kp RC(RG(NUMBER_6))  &kp RC(RG(N7))        &kp RC(RG(N8))        &kp RC(RG(NUMBER_9))  &kp RC(RG(NUMBER_0))  &trans
-                                                    &trans             &trans             &trans           &none                 &kp TAB               &trans
+       &kp LS(LG(LC(LEFT)))  &kp LS(LC(LG(RIGHT)))  &kp LC(LG(LEFT))   &kp LC(LG(RIGHT))  &kp SPACE    &kp RC(RG(NUMBER_1))  &kp RC(RG(NUMBER_2))  &kp RG(RC(NUMBER_3))  &kp RC(RG(NUMBER_4))  &kp RC(RG(N5))
+       &kp GRAVE             &kp TILDE              &kp DOWN_ARROW     &kp UP_ARROW       &kp TAB      &kp ESCAPE            &kp LEFT              &kp RIGHT             &kp NON_US_BACKSLASH  &kp PIPE
+&mo 3  &none                 &none                  &kp LC(LG(MINUS))  &kp LC(LG(PLUS))   &none        &kp RC(RG(NUMBER_6))  &kp RC(RG(N7))        &kp RC(RG(N8))        &kp RC(RG(NUMBER_9))  &kp RC(RG(NUMBER_0))  &trans
+                                                    &trans             &trans             &trans       &none                 &kp BACKSPACE         &trans
             >;
         };
 
