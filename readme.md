@@ -28,3 +28,25 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+
+## LOCAL BUILD
+
+To build the firmware locally instead of using GitHub Actions:
+
+- install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and make sure it is running
+- run the build script from the repo root:
+
+  ```sh
+  ./build.sh
+  ```
+
+The script builds the same targets as CI using the `zmkfirmware/zmk-build-arm:3.5`
+image (matching the ZMK `v0.2` / Zephyr 3.5 revision pinned in `config/west.yml`)
+and writes the firmware to the `build/` directory:
+
+- `build/totem_left-seeeduino_xiao_ble-zmk.uf2`
+- `build/totem_right-seeeduino_xiao_ble-zmk.uf2`
+- `build/settings_reset-seeeduino_xiao_ble-zmk.uf2` (use to clear the stored settings)
+
+The west workspace (downloaded ZMK/Zephyr modules) is kept outside the repo in
+`../zmk-workspace`. Override it with `ZMK_WORKSPACE=/path/to/workspace ./build.sh`.
